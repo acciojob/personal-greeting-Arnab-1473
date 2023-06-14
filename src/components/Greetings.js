@@ -9,11 +9,12 @@ const Greeting = () => {
 
     return(
         <div>
-            <label>
-                Enter your name :
-                <input type="text" value={name} onChange={handleInputChange} />
-            </label>
-            {name && <h3>Hello, {name}!</h3>}
+            <p>Enter your name :</p>
+                <input type="text" value={name} onChange={handleInputChange} />           
+            {
+            name && 
+            <h3>Hello {name}!</h3>
+            }
         </div>
     )
 }
