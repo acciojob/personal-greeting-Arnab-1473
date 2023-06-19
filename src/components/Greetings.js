@@ -13,9 +13,9 @@ const Greeting = () => {
                 <input type="text" value={name} onChange={handleInputChange} />           
             {
             name && 
-            <h3>Hello {name}!</h3>
+            <span>Hello {name}!</span>
             }
-            
+
         </div>
     )
 }
